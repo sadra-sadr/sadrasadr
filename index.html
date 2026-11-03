@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10170f">
+<title>Sãdrã Sãdr | Minecraft Packs</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#10170f;color:#f3f7f0;font-family:Tahoma,system-ui,sans-serif}
+#app{min-height:100vh;background:#10170f;overflow:hidden}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px clamp(18px,5vw,64px);border-bottom:1px solid #ffffff18;background:#172719}
+.brand{font-weight:900;letter-spacing:.5px;font-size:1.12rem;direction:ltr}.brand span{color:#8fd36f}
+.badge{font-size:.75rem;color:#c4e6b5;border:1px solid #8fd36f55;padding:7px 11px;border-radius:999px}
+main{max-width:1100px;margin:auto;padding:70px 22px 90px}.hero{text-align:center;margin-bottom:48px}
+.eyebrow{color:#9bd77e;letter-spacing:2px;font-size:.75rem;font-weight:800}
+h1{font-size:clamp(2.2rem,7vw,4.7rem);line-height:1.15;margin:15px 0;letter-spacing:-2px}h1 span{color:#9bd77e}
+.hero p{color:#b7c5b2;max-width:560px;margin:auto;line-height:1.9}
+.choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.choice{min-height:230px;text-align:right;padding:30px;border:1px solid #8fd36f42;border-radius:22px;color:#e8f3e5;background:#172719;cursor:pointer;transition:.2s}
+.choice:hover{transform:translateY(-5px);border-color:#9bd77e;background:#203a21}
+.icon{width:56px;height:56px;display:grid;place-items:center;background:#8fd36f20;border-radius:15px;font-size:1.8rem;margin-bottom:22px}
+.choice h2{margin:0 0 10px;font-size:1.55rem}.choice p{color:#b7c5b2;line-height:1.8;margin:0}.arrow{display:inline-block;margin-top:22px;color:#9bd77e;font-weight:800}
+#catalog{display:none}.back{border:1px solid #8fd36f66;background:transparent;color:#c8e9bb;border-radius:10px;padding:10px 15px;cursor:pointer;margin-bottom:30px}
+.catalog-head h2{font-size:clamp(1.8rem,5vw,2.8rem);margin:0 0 8px}.catalog-head p{color:#b7c5b2;margin:0 0 25px}
+.pack-card{border:1px solid #8fd36f55;background:#172719;border-radius:20px;overflow:hidden;max-width:850px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:3px;background:#0b100b}.gallery img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.pack-content{padding:24px}.pack-content h3{font-size:1.5rem;margin:0 0 14px;color:#a9e58e}
+.pack-content p{white-space:pre-line;color:#e0e9dc;line-height:2;margin:0 0 18px}
+.pack-list{color:#c7d7c0;line-height:2.1;columns:2;padding-right:22px}
+.download{display:inline-block;margin-top:16px;padding:13px 22px;background:#8fd36f;color:#10200d;text-decoration:none;font-weight:900;border-radius:12px}
+.note{color:#9aaa94;font-size:.85rem;margin-top:12px}
+footer{text-align:center;padding:24px;border-top:1px solid #ffffff18;color:#84917f;font-size:.85rem}
+@media(max-width:650px){main{padding-top:52px}.choices{grid-template-columns:1fr}.choice{min-height:190px}.gallery{grid-template-columns:1fr}.gallery img{aspect-ratio:1.35/1}.pack-list{columns:1}}
+</style>
+</head>
+<body><div id="app">
+<header><div class="brand">Sãdrã <span>Sãdr</span></div><div class="badge">MINECRAFT BEDROCK</div></header>
+<main>
+<section id="home">
+<div class="hero"><div class="eyebrow">OFFICIAL PACK HUB</div><h1>Build your world.<br><span>Change your Minecraft.</span></h1><p>Explore custom Minecraft packs made for a better game experience.</p></div>
+<div class="choices">
+<button class="choice" onclick="openCatalog('resource')"><div class="icon">🧱</div><h2>Resource Pack</h2><p>Discover textures, visuals and custom resource packs.</p><span class="arrow">مشاهده پک‌ها ←</span></button>
+<button class="choice" onclick="openCatalog('behavior')"><div class="icon">⚙️</div><h2>Behavior Pack</h2><p>Discover addons that change gameplay and behaviors.</p><span class="arrow">مشاهده پک‌ها ←</span></button>
+</div></section>
+<section id="catalog"><button class="back" onclick="goHome()">→ بازگشت</button>
+<div class="catalog-head"><h2 id="catalogTitle">Resource Pack</h2><p id="catalogDescription">پک‌های گرافیکی و ظاهری ماینکرفت بدراک</p></div>
+<div id="resourceContent" class="pack-card" style="display:none">
+<div class="gallery"><img src="shader-preview-1.jpg" alt="تصویر شیدرپک ۱"><img src="shader-preview-2.jpg" alt="تصویر شیدرپک ۲"></div>
+<div class="pack-content">
+<h3>جمع ۱۷ ریسورس ✅</h3>
+<p>🐉| شیدرپک جذاب برای بدراک ادیشن
+امروز اومدیم یک پک معرفی کردیم که ۱۴ نوع شیدر مختلف توی خودش داره!!!
+از شیدر های با کیفیت و ذوب کن گوشی گرفته 🔥
+تا نایت ویژن و اور های درخشان🌟!!!
+
+همه و همه اینا توی یک پک خفن و جذاب !!
+afst
+Newb X Ale
+ultramarinenightfalkx
+Vibrant Visuals Night Vision
+Better Vibrant Visuals - Vanilla
+Vanilla RTX
+Newb X Dragon Complementary - Android
+Dramatic Skys Bedrock Demo
+afgea
+Newb X Dawn Reimagined - Android
+Newb Complementary Reimagined - Android
+PrizmaVisuals
+Revolution Vibrant Visuals - Realistic
+Animated Glowing Ores
+lum
+
+✨#STXR [👤#M_Sadra_Sadr ]
+🌟 Minecraft News | @sadramozm</p>
+<a class="download" href="shader-pack-by-sadramozm.mcaddon" download>⬇ دانلود فایل کامل (.mcaddon)</a>
+<div class="note">فایل اصلی به‌صورت یک‌جا قرار داده شده و اجزای آن جدا نشده‌اند.</div>
+</div></div>
+<div id="behaviorContent" class="empty" style="display:none;border:1px dashed #8fd36f66;border-radius:18px;padding:45px 20px;text-align:center;color:#b7c5b2;background:#172719"><strong>به‌زودی</strong><br>Behavior Packها بعداً اینجا قرار می‌گیرند.</div>
+</section></main><footer>© 2026 Sãdrã Sãdr · Minecraft Bedrock Packs</footer></div>
+<script>
+function openCatalog(type){const r=type==='resource';document.getElementById('home').style.display='none';document.getElementById('catalog').style.display='block';document.getElementById('catalogTitle').textContent=r?'Resource Pack':'Behavior Pack';document.getElementById('catalogDescription').textContent=r?'پک‌های گرافیکی و ظاهری ماینکرفت بدراک':'افزونه‌های تغییر گیم‌پلی ماینکرفت بدراک';document.getElementById('resourceContent').style.display=r?'block':'none';document.getElementById('behaviorContent').style.display=r?'none':'block';window.scrollTo({top:0,behavior:'smooth'})}
+function goHome(){document.getElementById('catalog').style.display='none';document.getElementById('home').style.display='block';window.scrollTo({top:0,behavior:'smooth'})}
+</script></body></html>
